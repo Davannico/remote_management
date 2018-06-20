@@ -52,7 +52,7 @@ Run(ciHost);</onclick>
         <script><![CDATA[function Run(ciHost) {
 	try {
 		var objShell = new ActiveXObject("WScript.Shell");
-		objShell.Run("mstsc /v:"+ciHost+" /shadow:2 /control /noConsentPrompt");
+		objShell.Run("mstsc /v:"+ciHost+" /shadow:Console /control /noConsentPrompt");
 	} catch(e) {
 		alert(e);
 	}
@@ -68,7 +68,7 @@ Run(ciHost);</onclick>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>797d33f9dbf69b008a3fd740cf9619ea</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Remote Desktop</sys_name>
         <sys_overrides/>
         <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
@@ -76,7 +76,7 @@ Run(ciHost);</onclick>
         <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
         <sys_update_name>sys_ui_action_797d33f9dbf69b008a3fd740cf9619ea</sys_update_name>
         <sys_updated_by>david.larkin.admin</sys_updated_by>
-        <sys_updated_on>2018-06-20 20:19:21</sys_updated_on>
+        <sys_updated_on>2018-06-20 20:45:11</sys_updated_on>
         <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
