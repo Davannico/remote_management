@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_160525_remote_ma.Remote</name>
+        <script><![CDATA[var x_160525_remote_ma = x_160525_remote_ma || {};
+
+x_160525_remote_ma.Remote = (function() {
+	"use strict";
+
+/* set your private variables and functions here. For example: 
+	var privateVar = 0; 
+	function private_function() {
+		return ++privateVar;
+	}
+*/
+
+/* Share variables between multiple UI scripts by adding them to your scope object. For example: 
+	x_160525_remote_ma.sharedVar = 0; 
+
+ Then access them in your scripts the same way. For example: 
+	function get_shared() {
+		return x_160525_remote_ma.sharedVar;
+	}
+*/
+
+	return {
+
+/* set your public API here. For example:
+		incrementAndReturnPrivateVar: function() {
+			return private_function();
+		},
+*/
+		type:  "Remote"
+	};
+})();
+]]></script>
+        <script_name>Remote</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
+        <sys_created_by>david.larkin.admin</sys_created_by>
+        <sys_created_on>2018-06-20 20:07:04</sys_created_on>
+        <sys_id>45bbf3f5dbf69b008a3fd740cf961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_160525_remote_ma.Remote</sys_name>
+        <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
+        <sys_update_name>sys_ui_script_45bbf3f5dbf69b008a3fd740cf961924</sys_update_name>
+        <sys_updated_by>david.larkin.admin</sys_updated_by>
+        <sys_updated_on>2018-06-20 20:07:04</sys_updated_on>
+        <use_scoped_format>true</use_scoped_format>
+    </sys_ui_script>
+</record_update>

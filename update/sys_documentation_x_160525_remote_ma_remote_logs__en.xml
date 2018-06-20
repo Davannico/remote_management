@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Remote Logs" language="en" table="x_160525_remote_ma_remote_logs">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Remote Logs</label>
+            <language>en</language>
+            <name>x_160525_remote_ma_remote_logs</name>
+            <plural>Remote Logs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>david.larkin.admin</sys_created_by>
+            <sys_created_on>2018-06-20 19:57:14</sys_created_on>
+            <sys_id>fd893bb5dbf69b008a3fd740cf9619be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Remote Logs</sys_name>
+            <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
+            <sys_update_name>sys_documentation_x_160525_remote_ma_remote_logs__en</sys_update_name>
+            <sys_updated_by>david.larkin.admin</sys_updated_by>
+            <sys_updated_on>2018-06-20 19:57:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

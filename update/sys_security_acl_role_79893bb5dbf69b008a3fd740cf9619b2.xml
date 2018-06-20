@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>david.larkin.admin</sys_created_by>
+        <sys_created_on>2018-06-20 19:57:14</sys_created_on>
+        <sys_id>79893bb5dbf69b008a3fd740cf9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_160525_remote_ma_remote_logs.x_160525_remote_ma.user</sys_name>
+        <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
+        <sys_security_acl display_value="x_160525_remote_ma_remote_logs">71893bb5dbf69b008a3fd740cf9619ae</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_79893bb5dbf69b008a3fd740cf9619b2</sys_update_name>
+        <sys_updated_by>david.larkin.admin</sys_updated_by>
+        <sys_updated_on>2018-06-20 19:57:14</sys_updated_on>
+        <sys_user_role display_value="x_160525_remote_ma.user" name="x_160525_remote_ma.user">30d2a3bddb769b008a3fd740cf96190f</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="New Section" section_id="30ac33b9dbf69b008a3fd740cf961949" sys_domain="global" table="incident" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_html_1</element>
+            <position>0</position>
+            <sys_created_by>david.larkin.admin</sys_created_by>
+            <sys_created_on>2018-06-20 20:12:32</sys_created_on>
+            <sys_id>c60d7bb9dbf69b008a3fd740cf96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="incident" sys_domain="global" view="Default view">30ac33b9dbf69b008a3fd740cf961949</sys_ui_section>
+            <sys_updated_by>david.larkin.admin</sys_updated_by>
+            <sys_updated_on>2018-06-20 20:12:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>david.larkin.admin</sys_created_by>
+            <sys_created_on>2018-06-20 20:12:32</sys_created_on>
+            <sys_id>4a0d7bb9dbf69b008a3fd740cf96190e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="incident" sys_domain="global" view="Default view">30ac33b9dbf69b008a3fd740cf961949</sys_ui_section>
+            <sys_updated_by>david.larkin.admin</sys_updated_by>
+            <sys_updated_on>2018-06-20 20:12:32</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>david.larkin.admin</sys_created_by>
+            <sys_created_on>2018-06-20 20:10:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>30ac33b9dbf69b008a3fd740cf961949</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>New Section</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
+            <sys_update_name>sys_ui_section_30ac33b9dbf69b008a3fd740cf961949</sys_update_name>
+            <sys_updated_by>david.larkin.admin</sys_updated_by>
+            <sys_updated_on>2018-06-20 20:10:49</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
