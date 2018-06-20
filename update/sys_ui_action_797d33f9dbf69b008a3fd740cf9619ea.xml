@@ -52,12 +52,13 @@ Run(ciHost);</onclick>
         <script><![CDATA[function Run(ciHost) {
 	try {
 		var objShell = new ActiveXObject("WScript.Shell");
-		objShell.Run("mstsc /v:"+ciHost+" /shadow:1 /control /prompt");
+		objShell.Run("mstsc /v:"+ciHost+" /shadow:1 /control /prompt /noConsentPrompt");
 	} catch(e) {
 		alert(e);
 	}
 }
-]]></script>
+var user = gs.getUserID();
+alert(user);]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -68,7 +69,7 @@ Run(ciHost);</onclick>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>797d33f9dbf69b008a3fd740cf9619ea</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Remote Desktop</sys_name>
         <sys_overrides/>
         <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
@@ -76,7 +77,7 @@ Run(ciHost);</onclick>
         <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
         <sys_update_name>sys_ui_action_797d33f9dbf69b008a3fd740cf9619ea</sys_update_name>
         <sys_updated_by>david.larkin.admin</sys_updated_by>
-        <sys_updated_on>2018-06-20 21:10:10</sys_updated_on>
+        <sys_updated_on>2018-06-20 21:44:57</sys_updated_on>
         <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
