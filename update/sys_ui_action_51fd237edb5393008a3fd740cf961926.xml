@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name>Run</action_name>
+        <action_name>Remote</action_name>
         <active>true</active>
         <client>true</client>
         <comments/>
@@ -9,7 +9,7 @@
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>true</form_context_menu>
-        <form_link>true</form_link>
+        <form_link>false</form_link>
         <form_style>primary</form_style>
         <hint/>
         <list_action>false</list_action>
@@ -20,38 +20,22 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
-        <name>Remote Desktop</name>
-        <onclick>var configItem = g_form.getDisplayBox("cmdb_ci").value;&#13;
-var gr = new GlideRecord('cmdb_ci');&#13;
-gr.addQuery('name', configItem);&#13;
-gr.query();&#13;
-while(gr.next()){&#13;
-	var Host = gr.name;&#13;
-	classname = gr.sys_class_name;&#13;
-if(classname == 'cmdb_ci_computer'){&#13;
-	var gr1 = new GlideRecord(classname);&#13;
-	var ciHost;&#13;
-	gr1.addQuery('name', configItem);&#13;
-	gr1.query();&#13;
-	while(gr1.next()){&#13;
-		ciHost = gr1.fqdn;&#13;
-		}&#13;
-}&#13;
-else {&#13;
-	var gr2 = new GlideRecord(classname);&#13;
-	var ciHost;&#13;
-	gr2.addQuery('name', configItem);&#13;
-	gr2.query();&#13;
-	while(gr2.next()){&#13;
-		ciHost = gr2.host_name;&#13;
-		}&#13;
-}&#13;
-}Run(ciHost);</onclick>
+        <name>Remote Management - RDP</name>
+        <onclick>Run()&#13;
+function Run(){var configItem=g_form.getDisplayBox("cmdb_ci").value; if (configItem==''){g_form.addErrorMessage('You cannot run Remote Tools when the Configuration Item field is empty. Please specify a Configuration Item before attempting.');} else {var gr=new GlideRecord('cmdb_ci');gr.addQuery('name',configItem);gr.query();while(gr.next()){var Host=gr.name;classname=gr.sys_class_name;if(classname=='cmdb_ci_computer'){var gr1=new GlideRecord(classname);var ciHost;gr1.addQuery('name',configItem);gr1.query();while(gr1.next()){ciHost=gr1.fqdn;}RunRDP1(ciHost);}else{var gr2=new GlideRecord(classname);var ciHost;gr2.addQuery('name',configItem);gr2.query();while(gr2.next()){ciHost=gr2.host_name;}RunRDP2(ciHost);}}}}</onclick>
         <order>100</order>
-        <script><![CDATA[function Run(ciHost) {
+        <script><![CDATA[function RunRDP1(ciHost) {
 	try {
 		var objShell = new ActiveXObject("WScript.Shell");
-		objShell.Run("mstsc /v:"+ciHost+" /shadow:1 /prompt /control /noConsentPrompt");
+		objShell.Run("mstsc /v:"+ciHost+" /shadow:1 /prompt /control");
+	} catch(e) {
+		alert(e);
+	}
+}
+function RunRDP2(ciHost) {
+	try {
+		var objShell = new ActiveXObject("WScript.Shell");
+		objShell.Run("mstsc /v:"+ciHost+" /shadow:2 /prompt /control");
 	} catch(e) {
 		alert(e);
 	}
@@ -62,19 +46,19 @@ else {&#13;
         <show_update>true</show_update>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>david.larkin.admin</sys_created_by>
-        <sys_created_on>2018-06-20 20:18:38</sys_created_on>
+        <sys_created_on>2018-07-18 18:15:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>797d33f9dbf69b008a3fd740cf9619ea</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Remote Desktop</sys_name>
+        <sys_id>51fd237edb5393008a3fd740cf961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Remote Management - RDP</sys_name>
         <sys_overrides/>
         <sys_package display_value="Remote Management" source="x_160525_remote_ma">2cd22f7ddb769b008a3fd740cf96192e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Remote Management">2cd22f7ddb769b008a3fd740cf96192e</sys_scope>
-        <sys_update_name>sys_ui_action_797d33f9dbf69b008a3fd740cf9619ea</sys_update_name>
+        <sys_update_name>sys_ui_action_51fd237edb5393008a3fd740cf961926</sys_update_name>
         <sys_updated_by>david.larkin.admin</sys_updated_by>
-        <sys_updated_on>2018-06-20 22:03:52</sys_updated_on>
+        <sys_updated_on>2018-07-18 18:15:36</sys_updated_on>
         <table>incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
